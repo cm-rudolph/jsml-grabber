@@ -1,0 +1,12 @@
+81-81:C7.82.03.FF => Hersteller-Identifikation					unit: 0 (=> Zeichenkette), scaler: 0 (keine Skalierung)
+01-00:00.00.09.FF => Geräteeinzelidentifikation / Server-ID		unit: 0 (=> Zeichenkette), scaler: 0 (keine Skalierung)
+01-00:01.08.00.FF => Wirkarbeit Bezug(+) Zählerstand Total		unit: 30 (=> Wh), scaler: -1 (=> 10^-1 => value in Zehntel-Wattstunden)
+01-00:01.08.01.FF => Wirkarbeit Bezug(+) Zählerstand Tarif 1	unit: 30 (=> Wh), scaler: -1 (=> 10^-1 => value in Zehntel-Wattstunden)
+01-00:01.08.02.FF => Wirkarbeit Bezug(+) Zählerstand Tarif 2	unit: 30 (=> Wh), scaler: -1 (=> 10^-1 => value in Zehntel-Wattstunden)
+01-00:10.07.00.FF => Momentane Wirkleistung						unit: 27 (=> W), scaler: -1 (=> 10^-1 => value in Zehntel-Watt)
+81-81:C7.82.05.FF => Public Key									unit: 0 (=> Zeichenkette), scaler: 0 (keine Skalierung), time: Sekunden seit 30.09.2015
+
+19458919
+19458921
+19458922
+19458924

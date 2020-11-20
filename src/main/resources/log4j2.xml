@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="jSMLGrabberXMLConfiguration" monitorInterval="60" status="INFO">
+    <ThresholdFilter level="DEBUG"/>
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d %-5p %c - %m%n</Pattern>
+            </PatternLayout>
+        </Console>
+        <RollingRandomAccessFile name="FILE" fileName="/var/log/jsml-grabber.log"
+                                 filePattern="/var/log/jsml-grabber.%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %-5p %c - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <!--TimeBasedTriggeringPolicy interval="1" modulate="true"/-->
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+        </RollingRandomAccessFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="FILE"/>
+        </Root>
+        <Logger name="de.famiru" level="DEBUG" additivity="true"/>
+    </Loggers>
+</Configuration>
